@@ -1,5 +1,8 @@
 // import * as actionTypes from "./actions";
 
+// keep track of cookies 
+// first time visting the site 
+// if there signed in
 
 const initialState = {
   items: []

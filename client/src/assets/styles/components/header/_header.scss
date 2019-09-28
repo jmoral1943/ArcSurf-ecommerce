@@ -1,0 +1,49 @@
+.c-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-header__signin {
+  text-decoration: none;
+  color: $dark-grey;
+  align-self: flex-end;
+  padding: .5em;
+  font-size: .9em;
+}
+
+.c-nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background: $grey;
+  align-items: center;
+  
+}
+.c-nav__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  padding-left: 1em;
+}
+
+.c-nav__link {
+  color: $dark-grey;
+  font-size: .9em;
+  text-decoration: none;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.c-nav__icons {
+  margin-right: 2em;
+}
+
+
+.c-nav__searchicon,
+.c-nav__carticon {
+  width: 24px;
+}
+
+.c-nav__carticon {
+  margin-left: 2em;
+}
