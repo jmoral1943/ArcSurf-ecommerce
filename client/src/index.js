@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 
-import './assets/styles/styles.scss';
+import "./assets/styles/styles.scss";
 import Cart from "./components/Cart";
 import reducer from "./store/reducer";
 import ForgotPassword from "./components/Forgotpassword";
@@ -19,6 +19,8 @@ import TermsOfUse from "./components/TermsOfUse";
 import Shipping from "./components/Payment/Shipping";
 import Billing from "./components/Payment/Billing";
 import OrderOverview from "./components/Payment/OrderOverview";
+import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
 
 export const store = createStore(
   reducer,
@@ -45,12 +47,11 @@ const Payment = ({ match }) => (
 const Routing = () => (
   <Router>
     <Switch>
-
       <Route path="/payments" component={Payment} />
       {
         <React.Fragment>
+          <Header />
           <main>
-            <p>whats uppp</p>
             <Route exact path="/" component={Landing} />
             <Route path="/home" component={Home} />
             <Route path="/products" component={Products} />
@@ -62,6 +63,7 @@ const Routing = () => (
             <Route path="/termsofuse" component={TermsOfUse} />
             <Route path="/forgotpassword" component={ForgotPassword} />
           </main>
+          <Footer />
         </React.Fragment>
       }
     </Switch>
