@@ -1,5 +1,3 @@
-
-
 .c-footer {
   background: $grey;
   display: flex;
@@ -7,8 +5,10 @@
 }
 
 .c-footer__logo {
+  padding-top: 35px;
   margin: 0 auto;
   width: 100px;
+  padding-bottom: 15px;
 }
 
 .c-list {
@@ -20,6 +20,7 @@
   display: flex;
   position: relative;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .c-footer__lists {
@@ -28,18 +29,19 @@
 
 .c-social-media {
   position: absolute;
-  left: 20px;
+  left: 50px;
+  top: 40px;
 }
 
 .c-social-media__text {
-  font-size: .9em;
+  font-size: 0.9em;
   text-align: center;
 }
 
 .c-social-media__icon {
   width: 24px;
-  margin-left: .5em;
-  margin-right: .5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .c-list {
@@ -48,7 +50,7 @@
 }
 
 .c-list li {
-  line-height: 1.9
+  line-height: 1.9;
 }
 
 .c-list__link {
@@ -61,7 +63,7 @@
   color: black;
   margin-left: 2em;
   margin-right: 2em;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 .c-footer-policy__links {
   margin-top: 2em;

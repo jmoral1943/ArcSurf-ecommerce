@@ -47,13 +47,13 @@ const Payment = ({ match }) => (
 const Routing = () => (
   <Router>
     <Switch>
+      <Route path="/landing" component={Landing} />
       <Route path="/payments" component={Payment} />
       {
         <React.Fragment>
           <Header />
           <main>
-            <Route exact path="/" component={Landing} />
-            <Route path="/home" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/products" component={Products} />
             <Route path="/contact" component={Contact} />
             <Route path="/signin" component={Signin_Signup} />

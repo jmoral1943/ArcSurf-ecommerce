@@ -5,7 +5,7 @@ import search from "../../../assets/images/search.svg";
 import cart from "../../../assets/images/cart.svg";
 
 const Header = () => (
-  <header className="c-header">
+  <div className="c-header">
     <Link to="/signin" className="c-header__signin">Sign in or Join</Link>
     <nav className="c-nav">
       <ul className="c-nav__list">
@@ -31,7 +31,7 @@ const Header = () => (
         </Link>
       </div>
     </nav>
-  </header>
+  </div>
 );
 
 export default Header;

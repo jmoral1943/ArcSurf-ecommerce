@@ -1,7 +1,14 @@
 @import "./base/normalize";
 @import "./base/base";
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Ovo&display=swap');
 
-@import './base/html';
+@import "./base/html";
 @import "./components/header/header";
 @import "./components/footer/footer";
+
+@import "./components/landing/landing";
+
+@import "./components/home/hero";
+@import "./components/home/banner";
+@import "./components/home/action";
