@@ -1,0 +1,53 @@
+.c-hero {
+  position: relative;
+  // margin-top: 100px;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.c-hero__leftarrow {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  z-index: 200;
+  cursor: pointer;
+  color: white;
+}
+
+.c-hero__rightarrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  cursor: pointer;
+}
+
+.c-hero__image {
+  position: absolute;
+  width: 100vw;
+}
+
+.c-hero__image--pushedup {
+  margin-top: -20vh;
+}
+
+.c-carousel {
+  opacity: 0;
+}
+
+.c-carousel-starting {
+  opacity: 1;
+}
+
+.c-hero-content {
+  z-index: 10;
+  position: absolute;
+  left: 8%;
+  color: white;
+  top: 35%;
+  width: 40%;
+}
+
+.c-hero__header { 
+  font-size: 3em;
+  width: auto;
+}

@@ -1,0 +1,40 @@
+.c-home-action {
+  position: relative;
+}
+
+.c-home-action__background-image {
+  width: 100vw;
+}
+
+.c-home-action__image {
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  width: 800px;
+}
+
+.c-home-action__card {
+  background: white;
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  width: 30vw;
+  padding: 2em 2em 3.7em 2em;
+}
+
+.c-home-action__title {
+  font-family: 'Ovo', serif;
+  font-size: 4em;
+  margin-bottom: .5em;
+}
+
+.c-home-action__text {
+  margin-bottom: 3em;
+}
+
+.c-home-action__link {
+  text-decoration: none;
+  color: black;
+  border: .5px solid rgb(49, 49, 49);
+  padding: .5em 2em;
+}
