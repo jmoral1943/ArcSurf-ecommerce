@@ -1,0 +1,39 @@
+{
+  "name": "new-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "npm run build && cd server node server.js",
+    "start:dev": "concurrently \"cd server && nodemon server.js\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmoral1943/ArcSurf-ecommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmoral1943/ArcSurf-ecommerce/issues"
+  },
+  "homepage": "https://github.com/jmoral1943/ArcSurf-ecommerce#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.1",
+    "if-env": "^1.0.4",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.7.0"
+  }
+}
