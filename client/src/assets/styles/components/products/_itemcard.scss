@@ -1,0 +1,40 @@
+.c-itemcard__image {
+  width: 100%;
+}
+.c-itemcard__price::before {
+  content: "$"
+}
+.c-itemcard__price {
+  border-bottom: 1px solid $dark-grey;
+  margin-top: .5em;
+  padding-bottom: .5em;
+  margin-bottom: 0;
+}
+
+.c-itemcard__sizes::after {
+  content: " sizes"
+}
+.c-itemcard__sizes {
+  margin-top: .5em;
+}
+
+.c-itemcard__name {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+@media(min-width:700px) {
+  .c-itemcard__image {
+    width: 100%;
+    height: 30vh;
+    max-height: 500px;
+  }
+}
+
+@media(min-width:900px) {
+  .c-itemcard__image {
+    width: 100%;
+    height: 41vh;
+    max-height: 500px;
+  }
+}

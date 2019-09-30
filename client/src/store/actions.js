@@ -1,0 +1,2 @@
+export const LOADPRODUCTS = "LOADPRODUCTS";
+export const FILTERPRICE = "FILTERPRICE";

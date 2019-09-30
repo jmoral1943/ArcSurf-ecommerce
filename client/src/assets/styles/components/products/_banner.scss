@@ -1,0 +1,28 @@
+.c-banner {
+  width: 100vw;
+  display: flex;
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-banner__image--larger {
+  width: 60vw;
+  height: 100vh;
+  margin-top: -5vh;
+}
+
+.c-banner__image--smaller {
+  width: 40vw;
+  height: 70vh;
+  margin-top: 5vh;
+  z-index: 3;
+}
+
+.c-banner__title {
+  color: $mid-grey;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  font-size: 3em;
+}

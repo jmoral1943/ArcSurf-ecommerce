@@ -44,7 +44,7 @@ const Payment = ({ match }) => (
   </div>
 );
 
-const Routing = () => (
+const Routing = (
   <Router>
     <Switch>
       <Route path="/landing" component={Landing} />
@@ -70,4 +70,4 @@ const Routing = () => (
   </Router>
 );
 
-ReactDOM.render(<Routing />, document.getElementById("root"));
+ReactDOM.render(<Provider store={store}>{Routing}</Provider>, document.getElementById("root"));

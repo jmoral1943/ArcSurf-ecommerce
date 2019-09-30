@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/Arc_Surf.svg";
-import surferOne from "../../assets/images/png/surf1.png";
-import surferTwo from "../../assets/images/png/surf2.png";
+import surferOne from "../../assets/png/surf1.png";
+import surferTwo from "../../assets/png/surf2.png";
 import Footer from "../Layout/Footer";
 
 const Landing = () => (
