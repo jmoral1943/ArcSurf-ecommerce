@@ -71,9 +71,9 @@ CREATE TABLE contacts(
   firstName VARCHAR(50) NOT NULL,
   lastName VARCHAR(50) NOT NULL,
   subjectLine VARCHAR(50) NOT NULL,
-  order_id INT NOT NULL,
+  order_id INT,
   email VARCHAR(50),
-  form VARCHAR(255),
+  form LONGTEXT NOT NULL,
   PRIMARY KEY (contact_id),
   FOREIGN KEY (order_id) REFERENCES orders(order_id)
 );

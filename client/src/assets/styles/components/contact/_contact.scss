@@ -1,0 +1,58 @@
+.c-contact {
+  display: flex;
+}
+
+.c-contact__background {
+  position: relative;
+}
+
+.c-contact__image {
+  width: 45vw;
+  height: 140vh;
+  filter: brightness(60%);
+}
+
+.c-contact-information {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.c-contact__information {
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.c-contact-information__title {
+  margin-top: 0;
+  margin-bottom: .25em;
+}
+
+.c-contact-information__text {
+  font-weight: 300;
+  width: 15vw;
+  margin-top: .5em;
+}
+
+.c-conatact-information__icon {
+  margin-right: 20px;
+}
+
+.c-form {
+  margin-top: 20vh;
+  width: 35vw;
+  margin: 20vh auto 0 auto;
+}
+
+.c-form__title {
+  font-weight: 100;
+  text-align: center;
+  border-bottom: 1px solid $mid-grey;
+  padding-bottom: 30px;
+}
+
+.c-form__text {
+  font-weight: 100;
+}
