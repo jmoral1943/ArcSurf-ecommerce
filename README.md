@@ -3,11 +3,11 @@ Arcsurf is the name of a fictional surf shop and I made a react e-commerce websi
 
 To start the project you...
 ```
-git clone https://github.com/jmoral1943/React-E-commerce
-cd React-E-commerce 
+git clone https://github.com/jmoral1943/ArcSurf-ecommerce
+cd ArcSurf-ecommerce
 npm i
 npm run install
 npm run start
 ```
 
-The client is using a create-react-app that is proxying to the node server for the api endpoints that I need to serve up the database information.
+The client is using a create-react-app that is proxying to the node server for the api endpoints that I need to serve up the  mysql database information.
