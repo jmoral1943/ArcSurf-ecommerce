@@ -45,4 +45,10 @@ router.get("/products", (req, res) => {
   }
 });
 
+router.get("/contacts", (req, res) => {
+  connection.execute("SELECT * FROM contacts;", (err, results, fields) => {
+    res.send(results)
+  })
+})
+
 module.exports = router;
