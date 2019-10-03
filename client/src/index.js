@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, BrowserRouter as Router, Switch} from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 
@@ -21,12 +21,15 @@ import Billing from "./components/Payment/Billing";
 import OrderOverview from "./components/Payment/OrderOverview";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
+import ScrollToTop from "./ScrollToTop";
 
+// creating a store for redux with the redux chrome extension
 export const store = createStore(
   reducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
+// seperate pages that would have a different header and footer
 const Payment = ({ match }) => (
   <div>
     {/* <Link to={`${match.url}/shipping`}>
@@ -51,23 +54,28 @@ const Routing = (
       <Route path="/payments" component={Payment} />
       {
         <React.Fragment>
-          <Header />
-          <main>
-            <Route exact path="/" component={Home} />
-            <Route path="/products" component={Products} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/signin" component={Signin_Signup} />
-            <Route path="/signup" component={Signingup} />
-            <Route path="/cart" component={Cart} />
-            <Route path="/privacypolicy" component={PrivacyPolicy} />
-            <Route path="/termsofuse" component={TermsOfUse} />
-            <Route path="/forgotpassword" component={ForgotPassword} />
-          </main>
-          <Footer />
+          <ScrollToTop>
+            <Header />
+            <main>
+              <Route exact path="/" component={Home} />
+              <Route path="/products" component={Products} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/signin" component={Signin_Signup} />
+              <Route path="/signup" component={Signingup} />
+              <Route path="/cart" component={Cart} />
+              <Route path="/privacypolicy" component={PrivacyPolicy} />
+              <Route path="/termsofuse" component={TermsOfUse} />
+              <Route path="/forgotpassword" component={ForgotPassword} />
+            </main>
+            <Footer />
+          </ScrollToTop>
         </React.Fragment>
       }
     </Switch>
   </Router>
 );
 
-ReactDOM.render(<Provider store={store}>{Routing}</Provider>, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>{Routing}</Provider>,
+  document.getElementById("root")
+);
