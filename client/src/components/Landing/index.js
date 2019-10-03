@@ -23,7 +23,7 @@ const Landing = () => (
     </header>
     <main className="c-main--landing">
       <div className="c-landing__hero">
-        <img alt="Man surfing" src={surferOne} className="c-hero__image" />
+        <img alt="Man surfing" src={surferOne} className="c-landing__image" />
         <div className="c-hero__action">
           <h2 className="c-action__header">Mens</h2>
           <Link to="/" className="c-action__button">

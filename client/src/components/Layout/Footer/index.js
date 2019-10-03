@@ -79,7 +79,6 @@ const Footer = () => (
               { name: "Surfboards", url: "/products?type=surfboards" },
               { name: "Shoes", url: "/products?type=shoes" },
               { name: "Shirts", url: "/products?type=shirts" },
-              { name: "Flip Flops", url: "/products?type=flipflops" }
             ]}
           />
           <List
