@@ -3,29 +3,29 @@
 }
 
 .c-home-action__background-image {
+  position: absolute;
   width: 100vw;
+  height: 95vh;
 }
 
 .c-home-action__image {
-  position: absolute;
+  position: relative;
   top: 10%;
-  right: 8%;
-  width: 800px;
+  width: 100vw;
 }
 
 .c-home-action__card {
   background: white;
-  position: absolute;
-  top: 16%;
-  left: 10%;
-  width: 30vw;
-  padding: 2em 2em 3.7em 2em;
+  position: relative;
+  width: 80vw;
+  padding: 1em 1em 3em 2em;
+  margin: 1em auto;
 }
 
 .c-home-action__title {
-  font-family: 'Ovo', serif;
-  font-size: 4em;
-  margin-bottom: .5em;
+  font-family: "Ovo", serif;
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 
 .c-home-action__text {
@@ -35,6 +35,52 @@
 .c-home-action__link {
   text-decoration: none;
   color: black;
-  border: .5px solid rgb(49, 49, 49);
-  padding: .5em 2em;
+  border: 0.5px solid rgb(49, 49, 49);
+  padding: 0.5em 2em;
+}
+
+@media (min-width: 800px) {
+  .c-home-action {
+    position: relative;
+  }
+
+  .c-home-action__background-image {
+    position: unset;
+    height: unset;
+    opacity: unset;
+    width: 100vw;
+  }
+
+  .c-home-action__image {
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    width: 800px;
+  }
+
+  .c-home-action__card {
+    background: white;
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    width: 30vw;
+    padding: 2em 2em 3.7em 2em;
+  }
+
+  .c-home-action__title {
+    font-family: "Ovo", serif;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+  }
+
+  .c-home-action__text {
+    margin-bottom: 3em;
+  }
+
+  .c-home-action__link {
+    text-decoration: none;
+    color: black;
+    border: 0.5px solid rgb(49, 49, 49);
+    padding: 0.5em 2em;
+  }
 }

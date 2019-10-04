@@ -17,7 +17,7 @@ const Footer = () => (
           <p className="c-social-media__text">
             <b>Follow our surfing community</b>
           </p>
-          <div>
+          <div className="c-social-media__icons">
             <a
               href="https://www.youtube.com/"
               target="_blank"

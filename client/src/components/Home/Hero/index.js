@@ -24,13 +24,11 @@ const Hero = () => {
     } else if (x === 1) {
       let slide = document.querySelectorAll(".c-carousel");
       slide[i].style.opacity = 0;
-      console.log(i);
       if (i === 2) {
         i = -1;
       }
 
       i++;
-      console.log(i);
 
       slide[i].style.opacity = 1;
     }
