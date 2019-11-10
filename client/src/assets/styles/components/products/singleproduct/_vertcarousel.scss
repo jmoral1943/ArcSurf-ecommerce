@@ -1,0 +1,36 @@
+.c-vertcarousel {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  margin-left: 2vw;
+}
+
+.c-vertcarousel__carousel {
+  height: 690px;
+  height: 690px;
+  overflow-y: hidden;
+  &::after {
+    content: url("../../../../images/arrow-down.svg");
+  }
+}
+
+.c-vertcarousel__image {
+  width: 160px;
+  height: 210px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: ease-in-out .5s;
+}
+
+.c-vertcarousel__upArrow {
+  width: 20px;
+  margin: 1em auto;
+  cursor: pointer;
+  transform: rotate(180);
+}
+
+.c-vertcarousel__downArrow {
+  width: 20px;
+  margin: 1em auto;
+  cursor: pointer;
+}

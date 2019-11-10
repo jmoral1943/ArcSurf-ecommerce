@@ -17,7 +17,7 @@ VALUES(
     "Whether layering with a jacket or just on its own, the Essential thermal is just that: Essential. This long sleeve crew features a waffle knit fabric and a garment wash with softener for an extra cozy finish. Look out for the logo clamp at the bottom hem.",
     50,
     "shirt",
-    "https://arcsurf.s3.amazonaws.com/et1.jpg"
+    "et1.jpg"
   ),
   (
     "Essential Thermal",
@@ -27,7 +27,7 @@ VALUES(
     "Whether layering with a jacket or just on its own, the Essential thermal is just that: Essential. This long sleeve crew features a waffle knit fabric and a garment wash with softener for an extra cozy finish. Look out for the logo clamp at the bottom hem.",
     50,
     "shirt",
-    "https://arcsurf.s3.amazonaws.com/et1.jpg"
+    "et1.jpg"
   ),
   (
     "Essential Thermal",
