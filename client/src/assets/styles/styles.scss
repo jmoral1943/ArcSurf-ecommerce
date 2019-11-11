@@ -4,7 +4,10 @@
 @import url("https://fonts.googleapis.com/css?family=Ovo&display=swap");
 
 @import "./base/html";
+
+@import "./components/header/hamburger";
 @import "./components/header/header";
+
 @import "./components/footer/footer";
 
 @import "./components/landing/landing";
@@ -21,3 +24,9 @@
 
 @import "./components/contact/contact";
 @import "./components/contact/form";
+
+
+@import "./components/products/singleproduct/singleproduct";
+@import "./components/products/singleproduct/vertcarousel";
+@import "./components/products/singleproduct/showcase";
+@import "./components/products/singleproduct/stats";

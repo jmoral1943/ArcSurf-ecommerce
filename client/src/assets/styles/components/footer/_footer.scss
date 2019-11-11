@@ -2,6 +2,7 @@
   background: $grey;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .c-footer__logo {
@@ -14,10 +15,13 @@
 .c-list {
   list-style-type: none;
   display: inline;
+  text-align: center;
+  padding: 0;
 }
 
 .c-footer__links {
   display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   padding-bottom: 30px;
@@ -25,12 +29,16 @@
 
 .c-footer__lists {
   display: flex;
+  flex-direction: column;
 }
 
 .c-social-media {
-  position: absolute;
-  left: 50px;
-  top: 40px;
+  position: relative;
+}
+
+.c-social-media__icons {
+  display: flex;
+  justify-content: center;
 }
 
 .c-social-media__text {
@@ -61,16 +69,105 @@
 .c-footer-policy__link {
   text-decoration: none;
   color: black;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
   font-size: 0.9em;
 }
 .c-footer-policy__links {
   margin-top: 2em;
   margin-bottom: 2em;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .c-footer-policy__text {
   text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .c-footer {
+    background: $grey;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .c-footer__logo {
+    padding-top: 35px;
+    margin: 0 auto;
+    width: 100px;
+    padding-bottom: 15px;
+  }
+
+  .c-list {
+    list-style-type: none;
+    display: inline;
+    text-align: unset;
+  }
+
+  .c-footer__links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .c-footer__lists {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .c-social-media {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+  }
+
+  .c-social-media__text {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .c-social-media__icon {
+    width: 24px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .c-list {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .c-list li {
+    line-height: 1.9;
+  }
+
+  .c-list__link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .c-footer-policy__link {
+    text-decoration: none;
+    color: black;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 0.9em;
+  }
+  .c-footer-policy__links {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .c-footer-policies {
+    margin-top: 3em;
+  }
+
+  .c-footer-policy__text {
+    text-align: center;
+    margin-bottom: 2em;
+  }
 }

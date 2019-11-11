@@ -4,6 +4,8 @@
   position: fixed;
   z-index: 1000;
   background: white;
+  width: 100vw;
+  height: 15vh;
 }
 
 .c-header__signin {
@@ -20,17 +22,21 @@
   justify-content: space-between;
   background: $grey;
   align-items: center;
+  opacity: 0;
 }
 .c-nav__list {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
   padding: 0;
   padding-left: 1em;
+  height: 100vh;
+  width: 100vw;
 }
 
 .c-nav__link {
   color: $dark-grey;
-  font-size: 0.9em;
+  font-size: 2em;
   text-decoration: none;
   margin-left: 1em;
   margin-right: 1em;
@@ -47,4 +53,94 @@
 
 .c-nav__carticon {
   margin-left: 2em;
+}
+
+.c-nav__link--desktop,
+.c-nav__carticon--desktop,
+.c-nav__searchicon {
+  display: none;
+}
+
+.c-nav__item {
+  margin-top: 2em;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+@media (min-width: 1000px) {
+  .c-nav__item {
+    margin-top: unset;
+  }
+  
+  .c-nav__link--desktop,
+  .c-nav__carticon--desktop,
+  .c-nav__searchicon {
+    display: unset;
+  }
+  .c-nav__link--mobile,
+  .c-nav__carticon--mobile {
+    display: none;
+  }
+  .c-header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    background: white;
+    height: 10vh;
+  }
+
+  .c-header__signin {
+    text-decoration: none;
+    color: $dark-grey;
+    align-self: flex-end;
+    padding: 0.5em;
+    font-size: 0.9em;
+  }
+
+  .c-nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background: $grey;
+    align-items: center;
+    height: unset;
+    width: unset;
+    opacity: 1;
+  }
+  .c-nav__list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 1em;
+    height: unset;
+    width: unset;
+  }
+
+  .c-nav__link {
+    color: $dark-grey;
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .c-nav__icons {
+    margin-right: 2em;
+  }
+
+  .c-nav__searchicon,
+  .c-nav__carticon {
+    width: 24px;
+  }
+
+  .c-nav__carticon {
+    margin-left: 2em;
+  }
+  .hamburger {
+    display: none;
+  }
 }

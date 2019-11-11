@@ -22,6 +22,7 @@ import OrderOverview from "./components/Payment/OrderOverview";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import ScrollToTop from "./ScrollToTop";
+import Single_Product from "./components/Products/Single_Product";
 
 // creating a store for redux with the redux chrome extension
 export const store = createStore(
@@ -59,6 +60,7 @@ const Routing = (
             <main>
               <Route exact path="/" component={Home} />
               <Route path="/products" component={Products} />
+              <Route path="/singleProduct" component={Single_Product} />
               <Route path="/contact" component={Contact} />
               <Route path="/signin" component={Signin_Signup} />
               <Route path="/signup" component={Signingup} />

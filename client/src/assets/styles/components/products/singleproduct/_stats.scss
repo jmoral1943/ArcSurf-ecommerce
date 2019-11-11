@@ -1,0 +1,73 @@
+.c-stats {
+  margin-left: 4%;
+}
+
+.c-stats__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.c-stats__price {
+  margin-right: 30px;
+  font-weight: 500;
+}
+
+.c-stats__rating {
+  display: flex;
+}
+
+.c-stats__stars {
+  display: flex;
+  margin-right: 10px;
+}
+
+.c-stats__star {
+  width: 20px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.c-stats__write {
+  letter-spacing: 2px;
+}
+
+.c-stats__title {
+  margin: 0;
+}
+
+.c-colors__image {
+  width: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.c-color {
+  border-top: 1px solid $dark-grey;
+}
+
+.c-sizes {
+  display: flex;
+}
+
+.c-size {
+  border: 1px solid black;
+  margin: 0 20px 0 0;
+  padding: 8px 12px;
+  &:hover {
+    color: white;
+    background-color: black;
+  }
+  cursor: pointer;
+}
+
+.c-stats__addToCart {
+  background-color: #26272b;
+  color: white;
+  padding: 20px 70px;
+  margin-top: 12vh;
+  cursor: pointer;
+  &:hover {
+    background-color: black;
+  }
+}

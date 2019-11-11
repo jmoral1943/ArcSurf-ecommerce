@@ -12,6 +12,7 @@ describe("Server API routes", () => {
   it("Get request Products", done => {
     request("http://localhost:4000/api/products", (error, response, body) => {
       expect(response.statusCode).to.equal(200);
+      expect(JSON.parse(response.body)).to.be.an('array')
       done();
     });
   });

@@ -1,19 +1,20 @@
 .c-home__banners {
   display: flex;
+  flex-direction: column;
   width: 80vw;
   justify-content: space-between;
   margin: 2em auto;
 }
 
 .c-home-card__image {
-  height: 50vh;
+  width: 80vw;
 }
 
 .c-home-card__title {
   font-size: 1.6em;
   font-weight: 700;
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .c-home-card__link {
@@ -23,12 +24,61 @@
 
 .c-home__vertical-banners {
   display: flex;
+  flex-direction: column;
   width: 80vw;
   justify-content: space-between;
   margin: 2em auto 6em auto;
 }
 
 .c-home-vcard__image {
-  width: 25vw;
-  height: 520px;
+  width: 80vw;
+  height: 70vh;
+}
+
+.c-home-banner__card {
+  margin-bottom: 1em;
+}
+
+.c-home-vcard {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 800px) {
+  .c-home__banners {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-between;
+    margin: 2em auto;
+  }
+
+  .c-home-card__image {
+    height: 50vh;
+    width: unset;
+  }
+
+  .c-home-card__title {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .c-home-card__link {
+    color: $dark-grey;
+    text-decoration: none;
+  }
+
+  .c-home__vertical-banners {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-between;
+    margin: 2em auto 6em auto;
+  }
+
+  .c-home-vcard__image {
+    width: 25vw;
+    height: 520px;
+  }
 }

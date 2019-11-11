@@ -1,7 +1,6 @@
 .c-hero {
   position: relative;
-  // margin-top: 100px;
-  height: 90vh;
+  height: 60vh;
   overflow: hidden;
 }
 
@@ -23,11 +22,12 @@
 
 .c-hero__image {
   position: absolute;
-  width: 100vw;
+  width: 150vw;
+  height: 60vh;
 }
 
 .c-hero__image--pushedup {
-  margin-top: -20vh;
+  width: 190vw;
 }
 
 .c-carousel {
@@ -41,13 +41,73 @@
 .c-hero-content {
   z-index: 10;
   position: absolute;
-  left: 8%;
+  left: 15%;
   color: white;
-  top: 35%;
-  width: 40%;
+  top: 60%;
+  width: 50%;
+  font-size: 0.5em;
 }
 
-.c-hero__header { 
+.c-hero__header {
   font-size: 3em;
   width: auto;
+}
+
+@media (min-width: 800px) {
+  .c-hero {
+    position: relative;
+    // margin-top: 100px;
+    height: 90vh;
+    overflow: hidden;
+  }
+
+  .c-hero__leftarrow {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    z-index: 200;
+    cursor: pointer;
+    color: white;
+  }
+
+  .c-hero__rightarrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
+  }
+
+  .c-hero__image {
+    position: absolute;
+    width: 100vw;
+    height: unset;
+  }
+
+  .c-hero__image--pushedup {
+    margin-top: -20vh;
+    width: 100vw;
+  }
+
+  .c-carousel {
+    opacity: 0;
+  }
+
+  .c-carousel-starting {
+    opacity: 1;
+  }
+
+  .c-hero-content {
+    z-index: 10;
+    position: absolute;
+    left: 8%;
+    color: white;
+    top: 35%;
+    width: 40%;
+    font-size: unset;
+  }
+
+  .c-hero__header {
+    font-size: 3em;
+    width: auto;
+  }
 }
