@@ -9,24 +9,21 @@
   height: 690px;
   height: 690px;
   overflow-y: hidden;
-  &::after {
-    content: url("../../../../images/arrow-down.svg");
-  }
 }
 
 .c-vertcarousel__image {
   width: 160px;
   height: 210px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
-  transition: ease-in-out .5s;
+  transition: ease-out .3s;
 }
 
 .c-vertcarousel__upArrow {
   width: 20px;
-  margin: 1em auto;
+  margin: 0 auto;
   cursor: pointer;
-  transform: rotate(180);
+  transform: rotate(180deg);
 }
 
 .c-vertcarousel__downArrow {

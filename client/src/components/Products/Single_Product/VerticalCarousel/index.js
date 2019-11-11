@@ -1,26 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 
 const VerticalCarousel = props => {
-  let count = 0;
+  const [count, setCount] = useState(0);
 
-  const handleDown = () => {
-    const up = document.querySelectorAll(".c-vertcarousel__image")
-    count--;
-    up[count].style.height = 0
-  }
+  const handleDown = async () => {
+    const up = document.querySelectorAll(".c-vertcarousel__image");
+    const topToShow = count - 1;
+
+    setCount(topToShow);
+    up[topToShow].style.height = "210px";
+  };
 
   const handleUp = () => {
-    const up = document.querySelectorAll(".c-vertcarousel__image")
-    
-    count++;
-    up[count].style.height = 0
-  }
+    const up = document.querySelectorAll(".c-vertcarousel__image");
+
+    if (count + 4 > up.length) {
+      return;
+    }
+
+    up[count].style.height = 0;
+    const i = count + 1;
+    setCount(i);
+  };
 
   return (
     <div className="c-vertcarousel">
-    {
-      count > 0 && <img onClick={handleDown} alt="arrow up" className="c-vertcarousel__upArrow" src={require("../../../../assets/images/arrow-down.svg")} />
-    }
+      {count > 0 && (
+        <img
+          onClick={handleDown}
+          alt="arrow up"
+          className="c-vertcarousel__upArrow"
+          src={require("../../../../assets/images/arrow-down.svg")}
+        />
+      )}
       <div className="c-vertcarousel__carousel">
         {props.img.map(img => (
           <img
@@ -31,9 +43,14 @@ const VerticalCarousel = props => {
           />
         ))}
       </div>
-      {
-        count < 1 && <img alt="arrow down" onClick={handleUp} className="c-vertcarousel__downArrow" src={require("../../../../assets/images/arrow-down.svg")} />
-      }
+      {count + 3 < props.img.length && (
+        <img
+          alt="arrow down"
+          onClick={handleUp}
+          className="c-vertcarousel__downArrow"
+          src={require("../../../../assets/images/arrow-down.svg")}
+        />
+      )}
     </div>
   );
 };
