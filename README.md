@@ -1,13 +1,41 @@
-# ArcSurf React E-commerce website
-Arcsurf is the name of a fictional surf shop and I made a react e-commerce website that uses a Node.js backend with a React.js frontend. That fetches data from a MySQL database. 
+# Arc Surf E-commerce Website
 
-To start the project you...
+This project is made with a React front-end and a Node.js server with Authentication with bcrypt and JWT.
+
+### Prerequisites
+
+This has only been tested on MacOS 10.15.
+Before beginning the installation, be sure you have the following software installed on the host machine:
+
+```
+- git
+```
+
+### Installing
+
+A step by step guide for getting the site running on your local machine.
+
+First, clone the repo down to your local machine:
+
 ```
 git clone https://github.com/jmoral1943/ArcSurf-ecommerce
-cd ArcSurf-ecommerce
+```
+
+Next, navigate to the root of the repo in terminal
+
+```
 npm i
-npm run install
 npm run start
 ```
 
-The client is using a create-react-app that is proxying to the node server for the api endpoints that I need to serve up the  mysql database information.
+## Built With
+
+- [NodeJS](https://nodejs.org/en/) - Back-end
+- [React](https://reactjs.org/) - Front-end
+- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - MongoDB Atlas for hosting my Mongodb database.
+- [Mocha](https://mochajs.org/) - For api automated testing
+- [Chai](https://www.chaijs.com/) - For api automated testing
+
+## Authors
+
+- **Jonathan Morales**  - [jmoral1943](https://github.com/jmoral1943)
