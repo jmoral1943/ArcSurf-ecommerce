@@ -1,9 +1,12 @@
 import React from 'react';
+import Signin from './Signin';
+import Join from './Join';
 
 const Signin_Signup = () => {
   return (
-    <div>
-      you're signing up or in
+    <div className="c-signin-signup">
+      <Signin />
+      <Join />
     </div>
   );
 };

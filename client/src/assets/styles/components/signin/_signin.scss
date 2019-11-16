@@ -1,0 +1,49 @@
+.c-signin {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em;
+  height: 60vh;
+  margin: 2em auto;
+  width: 380px;
+}
+
+.c-signin__input {
+  background: $grey;
+  padding: 1em;
+  border: none;
+  margin: 1em;
+}
+
+.c-signin__title {
+  margin: 1em auto;
+  color: $dark-grey;
+  font-weight: 400;
+}
+
+.c-signin__rememberMe {
+  display: flex;
+  margin: 1em ;
+}
+
+.c-signin__button {
+  color: white;
+  background: black;
+  padding: .8em 3em;
+  margin: 1em;
+  font-size: 1.2em;
+}
+
+.c-sigin__forgot {
+  margin: 1em auto;
+  text-decoration: none;
+  color: $dark-grey
+}
+
+.c-signin__checkbox {
+  margin-right: 1em;
+  border: 1px solid black;
+  &:checked {
+    background-color: black;
+  }
+}
