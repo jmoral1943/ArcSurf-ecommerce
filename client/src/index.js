@@ -33,15 +33,6 @@ export const store = createStore(
 // seperate pages that would have a different header and footer
 const Payment = ({ match }) => (
   <div>
-    {/* <Link to={`${match.url}/shipping`}>
-   shipping
- </Link>
- <Link to={`${match.url}/billing`}>
-   billing
- </Link>
- <Link to={`${match.url}/overview`}>
-   overview
- </Link> */}
     <Route path={`${match.url}/shipping`} component={Shipping} />
     <Route path={`${match.url}/billing`} component={Billing} />
     <Route path={`${match.url}/overview`} component={OrderOverview} />
