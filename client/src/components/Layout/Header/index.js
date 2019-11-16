@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/Arc_Surf.svg";
 import search from "../../../assets/images/search.svg";
@@ -7,7 +7,7 @@ import Hamburger from "./HamburgerIcon";
 
 const Header = () => {
   const [navOpen, setNav] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
+  // const [width, setWidth] = useState(window.innerWidth);
   const handleNavigation = () => {
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -29,15 +29,15 @@ const Header = () => {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  // useEffect(() => {
+  //   window.addEventListener("resize", () => setWidth(window.innerWidth));
 
-    if (width >= 1000) {
-      document.querySelector(".c-nav").style.opacity = "1";
-    } else {
-      document.querySelector(".c-nav").style.opacity = "1";
-    }
-  });
+  //   if (width >= 1000) {
+  //     document.querySelector(".c-nav").style.opacity = "1";
+  //   } else {
+  //     document.querySelector(".c-nav").style.opacity = "1";
+  //   }
+  // });
 
   return (
     <div className="c-header">
