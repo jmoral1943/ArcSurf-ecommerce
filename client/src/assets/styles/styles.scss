@@ -21,11 +21,10 @@
 @import "./components/products/grid";
 @import "./components/products/itemcard";
 @import "./components/products/filter";
-@import './components/products/recommend';
+@import "./components/products/recommend";
 
 @import "./components/contact/contact";
 @import "./components/contact/form";
-
 
 @import "./components/products/singleproduct/singleproduct";
 @import "./components/products/singleproduct/vertcarousel";
@@ -33,3 +32,7 @@
 @import "./components/products/singleproduct/stats";
 @import "./components/products/singleproduct/details";
 @import "./components/products/singleproduct/review";
+
+@import "./components/signin/signin";
+@import "./components/signin/signup";
+@import "./components/signin/main";
