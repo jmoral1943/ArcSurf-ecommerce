@@ -25,7 +25,8 @@
   "homepage": "https://github.com/jmoral1943/ArcSurf-ecommerce#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.1"
+    "mocha": "^6.2.1",
+    "nodemon": "^1.19.4"
   },
   "dependencies": {
     "@hapi/joi": "^15.1.1",
@@ -34,8 +35,8 @@
     "express": "^4.17.1",
     "helmet": "^3.21.1",
     "if-env": "^1.0.4",
+    "mongoose": "^5.7.11",
     "morgan": "^1.9.1",
-    "mysql2": "^1.7.0",
     "request": "^2.88.0"
   }
 }

@@ -1,0 +1,419 @@
+[
+  {
+    "name": "Essential Thermal",
+    "price": 29.95,
+    "color": "NAVY HEATHER",
+    "sizes": [
+      {
+        "size": "S",
+        "quantity": 50
+      },
+      {
+        "size": "M",
+        "quantity": 50
+      },
+      {
+        "size": "L",
+        "quantity": 50
+      },
+      {
+        "size": "XL",
+        "quantity": 50
+      }
+    ],
+    "description": "Whether layering with a jacket or just on its own, the Essential thermal is just that: Essential. This long sleeve crew features a waffle knit fabric and a garment wash with softener for an extra cozy finish. Look out for the logo clamp at the bottom hem.",
+    "type": "shirt",
+    "url": "et1.jpg"
+  },
+  {
+    "name": "Barlow Trucker Jacket",
+    "price": 129.95,
+    "color": "Ocean Wash",
+    "sizes": [
+      {
+        "size": "S",
+        "quantity": 50
+      },
+      {
+        "size": "M",
+        "quantity": 50
+      },
+      {
+        "size": "L",
+        "quantity": 50
+      },
+      {
+        "size": "XL",
+        "quantity": 50
+      }
+    ],
+    "description": "No matter the weather, hit the road with warmth to spare in the Barlow Trucker Jacket. The interior of this men’s jacket has been lined with warm Sherpa. Side welt pockets are complimented by a shank front closure for extra road-ready toughness.",
+    "type": "jacket",
+    "url": "btj1.jpg"
+  },
+  {
+    "name": "Wind Swell Anorak",
+    "price": 69.95,
+    "color": "Black",
+    "sizes": [
+      {
+        "size": "S",
+        "quantity": 50
+      },
+      {
+        "size": "M",
+        "quantity": 50
+      },
+      {
+        "size": "L",
+        "quantity": 50
+      },
+      {
+        "size": "XL",
+        "quantity": 50
+      }
+    ],
+    "description": "Bring on the wind and rain--you're covered with the Windswell Anorak by Billabong. Fabricated from recycled materials, this mini-ripstop Anorak features hood drawcords, lower hand pockets, chest zipper pocket, and a Billabong silicone badge at the center front. Toggle adjusters at the hem and hood lock the elements out, and a micro repel coating keeps the moisture away.",
+    "type": "jacket",
+    "url": "wsa1.jpg"
+  },
+  {
+    "name": "Native Cali T-Shirt",
+    "price": 25.95,
+    "color": "ROCK",
+    "sizes": [
+      {
+        "size": "S",
+        "quantity": 50
+      },
+      {
+        "size": "M",
+        "quantity": 50
+      },
+      {
+        "size": "L",
+        "quantity": 50
+      },
+      {
+        "size": "XL",
+        "quantity": 50
+      }
+    ],
+    "description": "Inspired by the California flag, this tee brings classic appeal. Premium fabric tee shirt features a soft hand screen print for great comfort and softness. Billabong’s heat seal neck label ups the comfort factor, and look for the left side seam flag label.",
+    "type": "shirt",
+    "url": "nct1.jpg"
+  },
+  {
+    "name": "Forest T-Shirt",
+    "price": 25.95,
+    "color": "ROCK",
+    "sizes": [
+      {
+        "size": "S",
+        "quantity": 50
+      },
+      {
+        "size": "M",
+        "quantity": 50
+      },
+      {
+        "size": "L",
+        "quantity": 50
+      },
+      {
+        "size": "XL",
+        "quantity": 50
+      }
+    ],
+    "description": "The left coast is the best coast. Premium fabric tee shirt features a soft hand screen print for great comfort and softness. Billabong’s heat seal neck label ups the comfort factor, and look for the left side seam flag label.",
+    "type": "shirt",
+    "url": "fts1.jpg"
+  },
+  {
+    "name": "Barlow Zip Jacket",
+    "price": 89.95,
+    "color": "PEWTER",
+    "sizes": [
+      {
+        "size": "S",
+        "quantity": 50
+      },
+      {
+        "size": "M",
+        "quantity": 50
+      },
+      {
+        "size": "L",
+        "quantity": 50
+      },
+      {
+        "size": "XL",
+        "quantity": 50
+      }
+    ],
+    "description": "Workwear styling shines through on the exceptionally warm Barlow zip men’s jacket. This front zip jacket features a quilted taffeta lined body and sleeves for extra comfort and warmth. The chest pocket and welt hand pockets bring the workwear function and styling.",
+    "quantity": 50,
+    "type": "jacket",
+    "url": "bzj1.jpg"
+  },
+  {
+    "name": "Old Skool Pro",
+    "price": 65,
+    "color": "Black/White",
+    "sizes": [
+      {
+        "size": "9",
+        "quantity": 50
+      },
+      {
+        "size": "10",
+        "quantity": 50
+      },
+      {
+        "size": "11",
+        "quantity": 50
+      },
+      {
+        "size": "12",
+        "quantity": 50
+      }
+    ],
+    "description": "The Old Skool Pro, a Vans classic upgraded for enhanced performance, features suede, canvas, and leather uppers, single-wrap foxing tape, UltraCush HD sockliners to keep the foot close to the board while providing the highest level of impact cushioning, and Vans original waffle outsoles for superior grip and control. The Old Skool Pro also includes Duracap",
+    "type": "shoe",
+    "url": "osp1.png"
+  },
+  {
+    "name": "Slip on",
+    "price": 50,
+    "color": "White",
+    "sizes": [
+      {
+        "size": "9",
+        "quantity": 50
+      },
+      {
+        "size": "10",
+        "quantity": 50
+      },
+      {
+        "size": "11",
+        "quantity": 50
+      },
+      {
+        "size": "12",
+        "quantity": 50
+      }
+    ],
+    "description": "The Classic Slip-On has a low profile, slip-on canvas upper with all-over checker print, elastic side accents, Vans flag label and Vans original Waffle Outsole.",
+    "type": "shoe",
+    "url": "so1.png"
+  },
+  {
+    "name": "4/3 Absolute Chest Zip Fullsuit",
+    "price": 199.95,
+    "color": "black",
+    "sizes": [
+      {
+        "size": "S",
+        "quantity": 50
+      },
+      {
+        "size": "M",
+        "quantity": 50
+      },
+      {
+        "size": "L",
+        "quantity": 50
+      },
+      {
+        "size": "XL",
+        "quantity": 50
+      }
+    ],
+    "description": "The Absolute Series delivers lightweight, premium heat and innovative technology with superior value. New for the 2019/2020 season, the Absolute now features Billabong exclusive Graphene lining at the front and back panels. Graphene is: 50% lighter than traditional hollow fiber liners and the most heat conductive material on the planet. The Absolute continues to deliver on heat and flexibility with super soft silicone stretch jersey combined with eco Superlite foam.",
+    "type": "wetsuit",
+    "url": "acz1.jpg"
+  },
+  {
+    "name": "3/2 Absolute Back Zip Fullsuit",
+    "price": 169.95,
+    "color": "black",
+    "sizes": [
+      {
+        "size": "S",
+        "quantity": 50
+      },
+      {
+        "size": "M",
+        "quantity": 50
+      },
+      {
+        "size": "L",
+        "quantity": 50
+      },
+      {
+        "size": "XL",
+        "quantity": 50
+      }
+    ],
+    "description": "The Absolute Series delivers lightweight, premium heat and innovative technology with superior value. New for the 2019/2020 season, the Absolute now features Billabong exclusive Graphene lining at the front and back panels. Graphene is 50% lighter than traditional hollow fiber liners and the most heat conductive material on the planet. The Absolute continues to deliver on heat and flexibility with super soft silicone stretch jersey combined with eco Superlite foam.",
+    "type": "wetsuit",
+    "url": "abz1.jpg"
+  },
+  {
+    "name": "3/2 Revolution Chest Zip Fullsuit",
+    "price": 229.95,
+    "color": "black",
+    "sizes": [
+      {
+        "size": "S",
+        "quantity": 50
+      },
+      {
+        "size": "M",
+        "quantity": 50
+      },
+      {
+        "size": "L",
+        "quantity": 50
+      },
+      {
+        "size": "XL",
+        "quantity": 50
+      }
+    ],
+    "description": "Heritage lines are reborn, backed by modern wetsuit technology.The Revolution Series utilizes premium wetsuit innovations and materials, creating a suit that delivers both performance and signature style. New for the 2019/2020 season, the Revolution now features Billabong exclusive Graphene lining at the front and back panels. Graphene is 50% lighter than traditional hollow fiber liners and the most heat conductive material on the planet.",
+    "type": "wetsuit",
+    "url": "rczf1.jpg"
+  },
+  {
+    "name": "Zeus board",
+    "price": 530,
+    "color": "white",
+    "sizes": [
+      {
+        "size": "6'5",
+        "quantity": 50
+      },
+      {
+        "size": "6.9",
+        "quantity": 50
+      },
+      {
+        "size": "7'1",
+        "quantity": 50
+      },
+      {
+        "size": "7'4",
+        "quantity": 50
+      }
+    ],
+    "description": "The CI team calls the Zeus “A quick and loose all-around performance shortboard”. The bottom contours are very light single entry, to double concave through the fins, to concave vee exit. The Zeus can be ridden as a squash, swallow or round pin in waves from waist to ceiling high.  Originally released in 2014, this board is now custom order only.",
+    "type": "surfboard",
+    "url": "zb1.webp"
+  },
+  {
+    "name": "Taco Grinder",
+    "price": 470,
+    "color": "white",
+    "sizes": [
+      {
+        "size": "6'5",
+        "quantity": 50
+      },
+      {
+        "size": "6.9",
+        "quantity": 50
+      },
+      {
+        "size": "7'1",
+        "quantity": 50
+      },
+      {
+        "size": "7'4",
+        "quantity": 50
+      }
+    ],
+    "description": "Originating as a board for navigating long barrels in Mexico, the Taco Grinder is a direct result of CI team demanding shortboard performance in waves that require a semi-gun or step-up.  Bottom is single concave throughout, a fuller rail and tail kick make it good paddler that still goes vertical. In short, a versatile high performance step-up designed for advanced surfers who want to take their good wave performance to the next level.  Ride this board the same width and thickness as your all-around performance board, but 2” to 6” longer depending on how big the waves are.",
+    "type": "surfboard",
+    "url": "tg1.webp"
+  },
+  {
+    "name": "Black and White",
+    "price": 685,
+    "color": "white",
+    "sizes": [
+      {
+        "size": "6'5",
+        "quantity": 50
+      },
+      {
+        "size": "6.9",
+        "quantity": 50
+      },
+      {
+        "size": "7'1",
+        "quantity": 50
+      },
+      {
+        "size": "7'4",
+        "quantity": 50
+      }
+    ],
+    "description": "An all around, high performance shortboard designed for down the line speed and easy rail-to-rail transitions, the Black & White is based on a favorite hand shape Britt Merrick made Dane Reynolds for Santa Barbara area point breaks. Dane related its feel to a good MBM.The Black & White has a fairly low entry rocker, a staged flat-ish section between the feet, and an accelerated kick out the tail. A single concave runs the length of the board, is deepest near the front fins and shallows into a hint of vee exiting the tail block.",
+    "type": "surfboard",
+    "url": "baw1.webp"
+  },
+  {
+    "name": "Twin Fin",
+    "price": 690,
+    "color": "white",
+    "sizes": [
+      {
+        "size": "6'5",
+        "quantity": 50
+      },
+      {
+        "size": "6.9",
+        "quantity": 50
+      },
+      {
+        "size": "7'1",
+        "quantity": 50
+      },
+      {
+        "size": "7'4",
+        "quantity": 50
+      }
+    ],
+    "description": "The Twin Fin has a retro 70’s feel, with updated performance qualities.It was originally designed and hand shaped by Britt Merrick when asked to compete in a surf contest where shapers ride retro boards they have created themselves. Inspired by a twin fin that his father Al had shaped for himself in the late 70’s, and that a friend had recently found at a garage sale, Britt took a template off it, drew it on a blank and updated the rocker to have a more modern feel with added positive drive and carving ability. Thus, the new CI Twin Fin was born.",
+    "type": "surfboard",
+    "url": "tf1.webp"
+  },
+  {
+    "name": "High-5",
+    "price": 740,
+    "color": "white",
+    "sizes": [
+      {
+        "size": "6'5",
+        "quantity": 50
+      },
+      {
+        "size": "6.9",
+        "quantity": 50
+      },
+      {
+        "size": "7'1",
+        "quantity": 50
+      },
+      {
+        "size": "7'4",
+        "quantity": 50
+      }
+    ],
+    "description": "The High 5 was cooked up by CI staff to be fun and forgiving but with performance sprinkled in.  Designed to be a quicker and nimbler offspring of the Average Joe, the High 5 will pad your wave count and still allow for rail work and section making.  The bottom is single concave entry to deep double through the fins and terminating with deep concave vee out the tail.  Comes stock with 5 fin boxes and can be ridden as a quad or thruster.   You can ride the High 5 however you want, but CI staff generally ride it about 3” to 5” shorter than our height.",
+    "type": "surfboard",
+    "url": "h51.webp"
+  }
+]

@@ -76,7 +76,7 @@ const Contact = props => {
     }
 
     axios
-      .post("/api/newcontact", {
+      .post("/api/contact", {
         firstName,
         lastName,
         subjectLine,
