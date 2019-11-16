@@ -29,10 +29,10 @@ const Recommendations = props => {
             }
             return (
               <ItemCard
-                key={item.product_name}
-                name={item.product_name}
-                url={item.product_url}
-                price={item.product_price}
+                key={item.name}
+                name={item.name}
+                url={item.url}
+                price={item.price}
                 sizes={item.sizes}
               />
             );

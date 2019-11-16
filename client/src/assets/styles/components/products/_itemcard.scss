@@ -23,6 +23,11 @@
   margin-bottom: .5em;
 }
 
+.c-itemcard {
+  text-decoration: none;
+  color: black;
+}
+
 @media(min-width:700px) {
   .c-itemcard__image {
     width: 100%;

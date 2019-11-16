@@ -1,9 +1,5 @@
 import * as actionTypes from "./actions";
 
-// keep track of cookies
-// first time visting the site
-// if there signed in
-
 const initialState = {
   items: [],
   products: []
@@ -20,11 +16,11 @@ const reducer = (state = initialState, action) => {
 
       const items = state.products.filter((item) => {
         if (action.price === 'low') {
-          return item.product_price < 100
+          return item.price < 100
         } else if (action.price === 'mid') {
-          return item.product_price >= 100 && item.product_price < 300
+          return item.price >= 100 && item.price < 300
         } else {
-          return item.product_price >= 300
+          return item.price >= 300
         }
       })
       return{
