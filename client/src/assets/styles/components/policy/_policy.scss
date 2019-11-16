@@ -1,0 +1,44 @@
+.c-policy-header {
+  padding-top: 10vh;
+  width: 100vw;
+  height: 30vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-policy-header__image {
+  margin-top: -40vh;
+}
+
+.c-policy-header__title {
+  color: white;
+  font-weight: 800;
+  position: absolute;
+  top: 30%;
+  font-size: 4em;
+  left: 3%;
+}
+
+.c-policy {
+  display: flex;
+}
+
+.c-policy__conditions {
+  width: 55vw;
+  margin: auto;
+}
+
+.c-policy__link {
+  color: black;
+  margin:  2em 2em 0 3em;
+}
+
+.c-policy__title--highlight {
+  text-decoration: underline;
+  text-align: center;
+  font-weight: 900;
+}
+
+.c-policy__title--updated {
+  text-align: center;
+}
