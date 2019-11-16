@@ -1,0 +1,84 @@
+.c-signingup {
+  padding-top: 12vh;
+  background: $grey;
+  display: flex;
+  padding-bottom: 3em;
+}
+
+.c-benefits {
+  position: relative;
+  width: 42vw;
+  overflow: hidden;
+  margin: 0 2em 0 auto;
+  height: 100vh;
+}
+
+.c-benefits-text {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.c-benefits__image {
+  height: 120vh;
+}
+
+.c-benefits__title {
+  color: white;
+  font-weight: 800;
+  font-size: 2em;
+  letter-spacing: 3px;
+  margin-bottom: 3em;
+}
+
+.c-benefits__title--smaller {
+  margin-bottom: 1em;
+}
+
+.c-createAccount {
+  background: white;
+  margin: 0 auto 0 2em;
+  width: 40vw;
+  padding: 3em;
+}
+
+.c-createAccount__title {
+  font-weight: 400;
+  text-align: center;
+  font-size: 2em;
+}
+
+.c-createAccount__input {
+  background: $grey;
+  border: none;
+  padding: 1em 1.5em;
+  margin-bottom: 2em;
+}
+
+.c-createAccount__input--checkbox {
+  margin-right: 1em;
+}
+
+.c-createAccount__emailListing {
+  color: $dark-grey;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.c-createAccount-emailListing {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.c-createAccount__button {
+  background-color: black;
+  padding: 1em;
+  color:white;
+  font-size: 1.2em;
+}
+
+.c-createAccount__terms {
+  color: black;
+}

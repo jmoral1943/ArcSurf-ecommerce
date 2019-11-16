@@ -1,9 +1,12 @@
 import React from 'react';
+import Benefits from './Benefits';
+import CreateAccount from './CreateAccount';
 
 const Signingup = () => {
   return (
-    <div>
-     <p>hii</p>
+    <div className="c-signingup">
+     <Benefits />
+     <CreateAccount />
     </div>
   );
 };
