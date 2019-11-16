@@ -1,0 +1,38 @@
+.c-recommend {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: $grey;
+  padding: 2em 2em 3em 2em;
+  margin-top: 2.5em;
+}
+
+.c-recommend__items {
+  display: flex;
+  overflow: hidden;
+  padding: 2em 2em 3em 2em;
+
+  .c-itemcard {
+    margin-left: 2em;
+    margin-right: 2em;
+    cursor: pointer;
+  }
+
+  .c-itemcard__price {
+    border-bottom: 1px solid $dark-grey;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 0em;
+  }
+
+  .c-itemcard__name {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.c-recommend__title {
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 3px;
+}

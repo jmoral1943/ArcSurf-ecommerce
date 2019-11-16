@@ -1,0 +1,38 @@
+.c-details {
+  margin-left: 5vw;
+}
+
+.c-feature {
+  list-style: none;
+  letter-spacing: 1px;
+  &:before {
+    content: "-  "
+  }
+  margin-top: 2em;
+}
+
+.c-details__highlight {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.c-details__light {
+  font-weight: 300;
+}
+
+.c-details__number {
+  margin-left: 1em;
+}
+
+.c-details__descr {
+  width: 40vw;
+  letter-spacing: 1.5px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  line-height: 1.6;
+}
+
+.c-details__title {
+  font-size: 1.6em;
+  font-weight: 500;
+}
