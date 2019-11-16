@@ -1,4 +1,5 @@
 import React from "react";
+import Stars from "./Stars";
 
 const Stats = () => {
   return (
@@ -7,33 +8,7 @@ const Stats = () => {
       <div className="c-stats__info">
         <h2 className="c-stats__price">$29.95</h2>
         <div className="c-stats__rating">
-          <div className="c-stats__stars">
-            <img
-              className="c-stats__star"
-              src={require("../../../../assets/images/star-o.svg")}
-              alt="Star rating"
-            />
-            <img
-              className="c-stats__star"
-              src={require("../../../../assets/images/star-o.svg")}
-              alt="Star rating"
-            />
-            <img
-              className="c-stats__star"
-              src={require("../../../../assets/images/star-o.svg")}
-              alt="Star rating"
-            />
-            <img
-              className="c-stats__star"
-              src={require("../../../../assets/images/star-o.svg")}
-              alt="Star rating"
-            />
-            <img
-              className="c-stats__star"
-              src={require("../../../../assets/images/star-o.svg")}
-              alt="Star rating"
-            />
-          </div>
+          <Stars/>
           <p className="c-stats__write">Write a review</p>
         </div>
       </div>
