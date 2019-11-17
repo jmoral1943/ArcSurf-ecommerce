@@ -4,13 +4,11 @@ const bcrypt = require("bcrypt-nodejs");
 const userSchema = new mongoose.Schema({
   firstName: {
     type: String,
-    trim: true,
-    required: "Your first name is required"
+    trim: true
   },
   lastName: {
     type: String,
-    trim: true,
-    required: "Your first name is required"
+    trim: true
   },
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true }
@@ -22,7 +20,7 @@ userSchema.methods.generateHash = password => {
 };
 
 // adds a method to a user document object to check if provided password is correct
-userSchema.methods.validPassword = password => {
+userSchema.methods.validPassword = function(password) {
   return bcrypt.compareSync(password, this.password);
 };
 

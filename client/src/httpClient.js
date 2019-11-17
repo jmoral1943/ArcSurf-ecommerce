@@ -22,14 +22,14 @@ httpClient.getCurrentUser = function() {
 httpClient.logIn = function(credentials) {
   return this({
     method: "post",
-    url: "/api/users/authenticate",
+    url: "/api/user/authenticate",
     data: credentials
   }).then(serverResponse => {
-    const token = serverResponse.data.token;
+    const token = serverResponse.data;
     if (token) {
       // sets token as an included header for all subsequent api requests
       this.defaults.headers.common.token = this.setToken(token);
-      return jwtDecode(token);
+      return token;
     } else {
       return false;
     }

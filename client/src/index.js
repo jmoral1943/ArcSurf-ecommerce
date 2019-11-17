@@ -44,30 +44,6 @@ const Payment = ({ match }) => (
   </div>
 );
 
-// const AdminPage = () => {
-//   const [currentUser, setUser] = useState(httpClient.getCurrentUser());
-
-//   useEffect(() => {
-//     const user = httpClient.getCurrentUser();
-//     if (user == null) return;
-//     console.log(user)
-//     console.log(currentUser);
-//     setUser(user);
-//     console.log(currentUser);
-//     // eslint-disable-next-line
-//   }, []);
-
-//   return (
-//     <>
-//       {currentUser ? (
-//         <Route path="/admin" component={Admin} />
-//       ) : (
-//         <Redirect to="/signin" />
-//       )}
-//     </>
-//   );
-// };
-
 const Routing = (
   <Router>
     <Switch>

@@ -82,13 +82,11 @@ const CreateAccount = props => {
       <p>
         By creating an account, you agree to ArchSurfer’s
         <Link to="/termsofuse" className="c-createAccount__terms">
-          {" "}
-          Terms of Use{" "}
+          Terms of Use
         </Link>
         and
         <Link to="/privacypolicy" className="c-createAccount__terms">
-          {" "}
-          Privacy Policy{" "}
+          Privacy Policy
         </Link>
       </p>
     </div>
