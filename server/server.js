@@ -45,6 +45,10 @@ app.use("/api/products", productRoute);
 const contactRoute = require("./routes/contact");
 app.use("/api/contact", contactRoute);
 
+const userRoute = require("./routes/user");
+app.use("/api/user", userRoute);
+
+
 // handling endpoints that don't exist
 app.get("*", (req, res) => {
   res.status(404).send("Nothing exist here bad request");

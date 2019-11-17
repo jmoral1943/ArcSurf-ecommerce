@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+
 import logo from "../../../assets/images/Arc_Surf.svg";
 import search from "../../../assets/images/search.svg";
 import cart from "../../../assets/images/cart.svg";
 import Hamburger from "./HamburgerIcon";
+import * as actionTypes from "../../../store/actions";
+import httpClient from "../../../httpClient";
 
-const Header = () => {
+const Header = props => {
   const [navOpen, setNav] = useState(false);
   // const [width, setWidth] = useState(window.innerWidth);
   const handleNavigation = () => {
@@ -38,12 +42,29 @@ const Header = () => {
   //     document.querySelector(".c-nav").style.opacity = "1";
   //   }
   // });
+  useEffect(() => {
+    const user = httpClient.getCurrentUser();
+    if (user == null) return;
+    props.loadUser(user);
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <div className="c-header">
-      <Link to="/signin" className="c-header__signin">
-        Sign in or Join
-      </Link>
+      {props.currentUser ? (
+        <div className="c-header-signins">
+          <Link to="/admin" className="c-header__signin">
+            Admin
+          </Link>
+          <Link to="/" className="c-header__signin" onClick={props.logOut}>
+            Sign out
+          </Link>
+        </div>
+      ) : (
+        <Link to="/signin" className="c-header__signin">
+          Sign in or Join
+        </Link>
+      )}
       <div>
         <Hamburger handleNav={handleNavigation} />
         <Link to="/" className="c-nav__link--mobile">
@@ -120,4 +141,17 @@ const Header = () => {
   );
 };
 
-export default Header;
+const mapStateToProps = state => {
+  return {
+    currentUser: state.currentUser
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    loadUser: data => dispatch({ type: actionTypes.LOADUSER, data }),
+    logOut: () => dispatch({ type: actionTypes.LOGOUT })
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import {
+  Route,
+  BrowserRouter as Router,
+  Switch
+} from "react-router-dom";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 
@@ -23,6 +27,7 @@ import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import ScrollToTop from "./ScrollToTop";
 import Single_Product from "./components/Products/Single_Product";
+import Admin from "./components/Admin";
 
 // creating a store for redux with the redux chrome extension
 export const store = createStore(
@@ -39,6 +44,30 @@ const Payment = ({ match }) => (
   </div>
 );
 
+// const AdminPage = () => {
+//   const [currentUser, setUser] = useState(httpClient.getCurrentUser());
+
+//   useEffect(() => {
+//     const user = httpClient.getCurrentUser();
+//     if (user == null) return;
+//     console.log(user)
+//     console.log(currentUser);
+//     setUser(user);
+//     console.log(currentUser);
+//     // eslint-disable-next-line
+//   }, []);
+
+//   return (
+//     <>
+//       {currentUser ? (
+//         <Route path="/admin" component={Admin} />
+//       ) : (
+//         <Redirect to="/signin" />
+//       )}
+//     </>
+//   );
+// };
+
 const Routing = (
   <Router>
     <Switch>
@@ -54,11 +83,12 @@ const Routing = (
               <Route path="/singleProduct" component={Single_Product} />
               <Route path="/contact" component={Contact} />
               <Route path="/signin" component={Signin_Signup} />
-              <Route path="/signup" component={Signingup} />
+              <Route path="/signup" render={Signingup} />
               <Route path="/cart" component={Cart} />
               <Route path="/privacypolicy" component={PrivacyPolicy} />
               <Route path="/termsofuse" component={TermsOfUse} />
               <Route path="/forgotpassword" component={ForgotPassword} />
+              <Route path="/admin" component={Admin} />
             </main>
             <Footer />
           </ScrollToTop>
