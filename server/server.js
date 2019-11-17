@@ -14,13 +14,11 @@ const port = process.env.PORT || 4000;
 app.use(helmet());
 // middleware to allow express to easily process json
 app.use(express.json());
-// middleware for adding logging for the server to mointor and log request and responses
-app.use(morgan("dev"));
-
-// checking the node_env
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
+if (process.env.NODE_ENV !== "production") {
+  // middleware for adding logging for the server to mointor and log request and responses
+  app.use(morgan("dev"));
 }
+
 // connection to database
 mongoose.connect(process.env.CONNECTION_STRING, {
   useNewUrlParser: true,
@@ -48,11 +46,14 @@ app.use("/api/contact", contactRoute);
 const userRoute = require("./routes/user");
 app.use("/api/user", userRoute);
 
-
-// handling endpoints that don't exist
-app.get("*", (req, res) => {
-  res.status(404).send("Nothing exist here bad request");
-});
+if (process.env.NODE_ENV === "production") {
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, "../client/build")));
+  // Handle React routing, return all requests to React app
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+  });
+}
 
 // listening to the env variable port if it exist if not port 4000
 app.listen(port, () => console.log(`Listening on port ${port}`));
