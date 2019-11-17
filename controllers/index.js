@@ -7,7 +7,7 @@ module.exports = {
     User.create(req.body, (err, user) => {
       if (err) return res.json("User is not created");
 
-      const token = signToken(user)
+      const token = signToken(user);
       res.json(token);
     });
   },
@@ -16,13 +16,14 @@ module.exports = {
     // check if the user exists
     User.findOne({ email: req.body.email }, (err, user) => {
       // if there's no user or the password is invalid
+      if (err) return res.json(err);
       if (!user || !user.validPassword(req.body.password)) {
         // deny access
         return res.json({ success: false, message: "Invalid credentials." });
       }
 
       const token = signToken(user);
-      res.json({ success: true, message: "Token attached.", token });
+      res.json(token);
     });
   },
 
