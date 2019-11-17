@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link, useHistory } from "react-router-dom";
 
-import { Link } from "react-router-dom";
+import httpClient from "../../../httpClient";
 
-const CreateAccount = () => {
+const CreateAccount = props => {
+  let history = useHistory();
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+
+  const submitUser = e => {
+    e.preventDefault();
+    httpClient.signUp({ firstName, lastName, email, password }).then(user => {
+      if (user) history.push("/admin");
+    });
+  };
+
   return (
     <div className="c-createAccount">
       <h2 className="c-createAccount__title">Create Account</h2>
@@ -12,18 +26,21 @@ const CreateAccount = () => {
           type="text"
           placeholder="First Name*"
           required
+          onChange={e => setFirstName(e.target.value)}
         />
         <input
           className="c-createAccount__input"
           type="text"
           placeholder="Last Name*"
           required
+          onChange={e => setLastName(e.target.value)}
         />
         <input
           className="c-createAccount__input"
           type="email"
           placeholder="Email*"
           required
+          onChange={e => setEmail(e.target.value)}
         />
         <div className="c-createAccount-emailListing">
           <input
@@ -44,6 +61,7 @@ const CreateAccount = () => {
           type="password"
           placeholder="Password*"
           required
+          onChange={e => setPassword(e.target.value)}
         />
         <label htmlFor="birthday">Date of Birth*</label>
         <input
@@ -52,14 +70,26 @@ const CreateAccount = () => {
           id="birthday"
           min="1920-01-01"
           max="2001-12-31"
-          required
+          // required
         />
-        <button className="c-createAccount__button">Create Account</button>
+        <button
+          className="c-createAccount__button"
+          onClick={e => submitUser(e)}
+        >
+          Create Account
+        </button>
       </form>
       <p>
         By creating an account, you agree to ArchSurfer’s
-        <Link to="/termsofuse" className="c-createAccount__terms"> Terms of Use </Link>and 
-        <Link to="/privacypolicy" className="c-createAccount__terms"> Privacy Policy </Link>
+        <Link to="/termsofuse" className="c-createAccount__terms">
+          {" "}
+          Terms of Use{" "}
+        </Link>
+        and
+        <Link to="/privacypolicy" className="c-createAccount__terms">
+          {" "}
+          Privacy Policy{" "}
+        </Link>
       </p>
     </div>
   );
