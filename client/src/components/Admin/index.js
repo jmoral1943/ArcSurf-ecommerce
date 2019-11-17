@@ -16,10 +16,6 @@ const Admin = props => {
 
   return (
     <>
-      {/* {props.currentUser && (
-        <Route path="/admin" component={AdminDashboard} />
-      ) } */}
-
       {props.currentUser ? (
         <Route path="/admin" component={AdminDashboard} />
       ) : (
