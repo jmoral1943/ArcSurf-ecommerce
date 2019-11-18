@@ -43,7 +43,7 @@ httpClient.signUp = function(userInfo) {
       const token = serverResponse.data;
       if (token) {
         this.defaults.headers.common.token = this.setToken(token);
-        return jwtDecode(token);
+        return token;
       } else {
         return false;
       }
