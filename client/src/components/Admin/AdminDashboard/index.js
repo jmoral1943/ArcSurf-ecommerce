@@ -7,8 +7,14 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     httpClient.get("/api/user/allproducts").then(({ data }) => {
-      setProducts(data);
+      console.log(data)
+      if (data.length > 0) return setProducts(data)
+      // setProducts(data);
     });
+
+    return function cleanup() {
+      setProducts(null);
+    };
   }, []);
   return (
     <div className="c-adminDashboard">

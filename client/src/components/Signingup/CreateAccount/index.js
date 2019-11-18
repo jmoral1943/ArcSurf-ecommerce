@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
+import { connect } from "react-redux";
 
 import httpClient from "../../../httpClient";
+import * as actionTypes from "../../../store/actions";
 
 const CreateAccount = props => {
   let history = useHistory();
@@ -13,6 +15,8 @@ const CreateAccount = props => {
   const submitUser = e => {
     e.preventDefault();
     httpClient.signUp({ firstName, lastName, email, password }).then(user => {
+      const currentUser = httpClient.getCurrentUser()
+      props.loadUser(currentUser);
       if (user) history.push("/admin");
     });
   };
@@ -93,4 +97,10 @@ const CreateAccount = props => {
   );
 };
 
-export default CreateAccount;
+const mapDispatchToProps = dispatch => {
+  return {
+    loadUser: data => dispatch({ type: actionTypes.LOADUSER, data })
+  };
+};
+
+export default connect(null, mapDispatchToProps)(CreateAccount);
