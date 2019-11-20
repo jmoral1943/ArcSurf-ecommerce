@@ -2,7 +2,7 @@
 
 This project is a Surf shop ecommerce website made with React for front-end, a Node.js server for the backend RESTAPI's, and authenication with bcrypt and json web tokens (JWT).
 
-## [Live Link] (https://arcsurf.herokuapp.com/)
+## https://arcsurf.herokuapp.com/ FYI it takes heroku a really long time to spin up my application give it 10-20 mins to spin my application up 
 
 ### Prerequisites
 
